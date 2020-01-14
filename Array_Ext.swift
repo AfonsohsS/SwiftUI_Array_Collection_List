@@ -10,7 +10,7 @@ import Foundation
 
 extension Array {
     
-    /// Func to create a collection of items like Collection List.
+    /// Func to create a collection of items like Collection View.
     func chunking(to nColumns: Int) -> [[Element]] {
         return stride(from: 0, to: count, by: nColumns).map {
             Array(self[$0..<Swift.min($0 + nColumns, count)])
